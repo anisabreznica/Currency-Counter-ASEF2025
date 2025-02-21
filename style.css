@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+.container, .converter-container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1, h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+input, select {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+button, .btn {
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.convert-btn, .btn {
+    background: #ffcc00;
+    color: #333;
+}
+
+.convert-btn:hover, .btn:hover {
+    background: #ffd633;
+}
+
+.switch-btn {
+    background: #ff5733;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.switch-btn:hover {
+    background: #ff704d;
+}
+
+#exchangeRate {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.copyright a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .container, .converter-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    input, select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button, .btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .switch-btn {
+        font-size: 18px;
+        padding: 10px;
+    }
+}

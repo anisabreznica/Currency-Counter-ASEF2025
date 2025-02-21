@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h2>Currency Converter💸</h2>
+
+        <div class="converter-box">
+            <div class="input-group">
+                <input type="number" id="amount" placeholder="Enter amount">
+                <div class="currency-dropdown">
+                    <input type="text" id="fromCurrencySearch" placeholder="Search currency">
+                    <select id="fromCurrency"></select>
+                </div>
+            </div>
+
+            <button id="switchButton" class="switch-btn">⇄</button>
+
+            <div class="input-group">
+                <input type="text" id="convertedAmount" disabled>
+                <div class="currency-dropdown">
+                    <input type="text" id="toCurrencySearch" placeholder="Search currency">
+                    <select id="toCurrency"></select>
+                </div>
+            </div>
+
+            <button id="convert" class="convert-btn">Convert</button>
+        </div>
+        <p id="exchangeRate"></p>
+    </div>
+
+    <form action="index.html">
+        <input type="submit" id="submit" value="Homepage" />
+      </form>
+
+      
+
+      <style>
+        form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#submit {
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    background: #65c2df;
+    color: #333;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    max-width: 200px;
+}
+
+#submit:hover {
+    background: #33fff1;
+}
+      </style>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
